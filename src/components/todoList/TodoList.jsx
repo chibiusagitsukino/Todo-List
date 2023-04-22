@@ -8,13 +8,13 @@ function TodoList() {
   // const [todos, setTodos] = useState(todoList);
 
   const addTodo = (todo) => {
-    if (!todo.text || /^\s*$/.test(todo.text)) {
+    if (!todo.text || new RegExp('^\\s*$').test(todo.text)) {
       return
     }
 
     //
 
-    const existingTodo = todos.find((todo) => todo.text === todo.text)
+    const existingTodo = todos.find((item) => item.text === todo.text)
     if (existingTodo) {
       alert(`The todo "${todo.text}" is already in the list.`)
       return
@@ -29,7 +29,7 @@ function TodoList() {
   }
 
   const updateTodo = (todoId, newValue) => {
-    if (!newValue.text || /^\s*$/.test(newValue.text)) {
+    if (!newValue.text || new RegExp('^\\s*$').test(newValue.text)) {
       return
     }
 
