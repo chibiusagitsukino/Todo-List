@@ -7,7 +7,7 @@
 }
 
 body {
-  background-color: #c8c9ee;
+  background-color: #f1ebdf;
 }
 
 .todo-app {
@@ -16,16 +16,22 @@ body {
   justify-content: start;
   width: 520px;
   min-height: 600px;
-  background-color: #edc5e4;
+  background-color: #ffffff;
   text-align: center;
   margin: 128px auto;
   border-radius: 10px;
   padding-bottom: 32px;
+
+
+  background-image: url("/notebookbackground.png");
+  background-size: cover;
+
+
 }
 
 h1 {
   margin: 32px 0;
-  color: #e7a0be;
+  color: #90b6ab;
   font-size: 24px;
 }
 
@@ -41,15 +47,15 @@ h1 {
 .todo-input {
   padding: 14px 32px 14px 16px;
   border-radius: 4px 0 0 4px;
-  border: 2px solid #e7a0be;
+  border: 2px solid #90b6ab;
   outline: none;
   width: 320px;
-  background-color: #edc5e4;
-  color: #6d6875;
+  background-color: #ffffff;
+  color: #2b2b2b;
 }
 
 .todo-input::placeholder {
-  color: #bdc2ea;
+  color: #2b2b2b;
 }
 
 .todo-button {
@@ -58,8 +64,8 @@ h1 {
   border-radius: 0 4px 4px 0;
   cursor: pointer;
   outline: none;
-  background-color: #e7a0be;
-  color: #edc5e4;
+  background-color: #90b6ab;
+  color: #ffffff;
   text-transform: capitalize;
 }
 
@@ -83,23 +89,23 @@ h1 {
   justify-content: space-between;
   align-items: center;
   margin: 4px auto;
-  color: #6d6875;
-  background-color: #bdc2ea;
+  color: #2b2b2b;
+  background-color: #e8af78;
   padding: 16px;
   border-radius: 5px;
   width: 90%;
 }
 
 .todo-row:nth-child(4n + 1) {
-  background-color: #82a2db;
+  background-color: #51a2b7;
 }
 
 .todo-row:nth-child(4n + 2) {
-  background-color: #eabcdb;
+  background-color: #ee956f;
 }
 
 .todo-row:nth-child(4n + 3) {
-  background-color: #c8c9ee;
+  background-color: #f1ebdf;
 }
 
 .icons {
@@ -111,9 +117,9 @@ h1 {
 
 .delete-icon {
   margin-right: 5px;
-  color: #6d6875;
+  color: #2b2b2b;
 }
 
 .edit-icon {
-  color: #6d6875;
+  color: #2b2b2b;
 }
